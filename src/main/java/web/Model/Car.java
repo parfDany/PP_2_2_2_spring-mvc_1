@@ -8,6 +8,12 @@ public class Car {
     private String color;
     private int power;
 
+    public Car(String nameCar, String color, int power) {
+        this.nameCar = nameCar;
+        this.color = color;
+        this.power = power;
+    }
+
     public String getNameCar() {
         return nameCar;
     }

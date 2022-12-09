@@ -13,9 +13,9 @@
         <th>Power</th>
     </tr>
     <tr th:each="cars :${carList}">
-        <td th:utext="${nameCar}">Brand</td>
-        <td th:utext="${color}">Color</td>
-        <td th:utext="${power}">Year</td>
+        <td th:utext="${cars.getNameCar()}">Brand</td>
+        <td th:utext="${cars.getColor()}">Color</td>
+        <td th:utext="${cars.getPower()}">Power</td>
     </tr>
 </table>
 </body>
